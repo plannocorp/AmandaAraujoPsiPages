@@ -5,3 +5,26 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 .hero-art{background:radial-gradient(ellipse at 83% 20%,#e5bdb1 0 9%,transparent 9.5%),radial-gradient(ellipse at 8% 80%,#d3e2d4 0 21%,transparent 21.5%),linear-gradient(145deg,#f0e9dd,#dce9df 70%,#d0e2d5)}.photo-halo{position:absolute;z-index:0;width:78%;aspect-ratio:1;border:1px solid #fff9;border-radius:50%;left:11%;top:9%;box-shadow:0 0 0 17px #ffffff1a,0 0 0 37px #ffffff14}.hero-photo{position:absolute;z-index:1;width:67%;height:87%;left:16.5%;top:5%;object-fit:cover;object-position:center 18%;border:7px solid #f8f6f1;border-radius:48% 48% 10px 10px;box-shadow:0 20px 40px #34584c30}.photo-caption{position:absolute;z-index:3;bottom:8%;left:50%;transform:translateX(-50%);min-width:190px;padding:10px 16px 9px;background:#fbf9f1ed;text-align:center;box-shadow:0 8px 18px #34584c18}.photo-caption span{display:block;color:#456a5e;font:500 11px var(--serif);letter-spacing:.04em}.photo-caption i{display:block;margin-top:3px;color:#8b8c7e;font:600 7px var(--sans);letter-spacing:.13em}.photo-note{position:absolute;z-index:3;right:5%;top:22%;width:92px;height:92px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:1px solid #fff9;border-radius:50%;background:#f9f6e9e8;color:#527164;text-align:center;font:italic 12px/1.25 var(--serif);box-shadow:0 8px 20px #34584c15}.photo-note>span:first-child{color:var(--rose);font-size:16px}.about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 24%;border-radius:47% 47% 8px 8px}.about-label{padding:8px 10px;background:#f8f6f1dc;backdrop-filter:blur(8px)}
 @media(max-width:680px){.hero-photo{width:73%;height:86%;left:13.5%;top:5%;object-position:center 17%}.photo-note{right:0;top:20%;width:78px;height:78px;font-size:10px}.photo-caption{bottom:8%;min-width:172px;padding:8px 12px}.about-photo{object-position:center 24%}}
+
+/* Refinamentos da identidade oficial e da navegação */
+.header{height:88px;box-shadow:0 8px 28px #273d3510}
+.brand{min-width:132px;min-height:70px;justify-content:flex-start}
+.brand-logo{display:block;width:132px;height:66px;object-fit:contain}
+.nav{font-size:13px;gap:clamp(16px,2.2vw,34px)}
+.nav-cta{padding:12px 18px;background:#3f756a;color:#fff;border-color:#3f756a;transition:background .2s,transform .2s,box-shadow .2s}
+.nav-cta:hover{background:#315e54;color:#fff;transform:translateY(-1px);box-shadow:0 8px 18px #315e5426}
+.hero{background:radial-gradient(ellipse at 87% 15%,#efd9d21f 0 18%,transparent 18.5%),linear-gradient(105deg,#faf8f3 0%,#f8f6f1 50%,#edf2eb 100%)}
+.hero-art{box-shadow:0 24px 70px #314b3d12,inset 0 0 0 1px #ffffffa8}
+.hero-photo{box-shadow:0 24px 52px #34584c36}
+.button-dark{box-shadow:0 9px 24px #3f756a24}
+.care-card{transition:background .22s,transform .22s,box-shadow .22s}
+.care-card:hover{z-index:1;background:#fbfaf6;transform:translateY(-4px);box-shadow:0 14px 30px #263c3010}
+.format-card{border:1px solid transparent;transition:transform .22s,border-color .22s,box-shadow .22s}
+.format-card:hover{transform:translateY(-3px);border-color:#dce7dc;box-shadow:0 16px 34px #263c3010}
+.faq-list summary{transition:color .2s}
+.faq-list summary:hover{color:#9b6867}
+.footer{border-top:1px solid #e7e9e2}
+.footer-brand .brand-logo{width:118px;height:59px}
+@media(max-width:900px){.header{height:82px}.brand-logo{width:120px;height:60px}}
+@media(max-width:680px){.header{height:70px}.brand{min-height:60px}.brand-logo{width:108px;height:54px}.footer-brand .brand-logo{width:106px;height:53px}}
+@media(hover:none){.care-card:hover,.format-card:hover{transform:none;box-shadow:none}}
